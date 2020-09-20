@@ -1,8 +1,10 @@
 # ignore a local directory
-code-archive/
+pa1/pa1_release/
 .DS_Store
 *.o
 *.i
 *~
+pa1/*.jpg
+pa1/*.png
 .vagrant
 CS58_CODE_EXAMPLES
