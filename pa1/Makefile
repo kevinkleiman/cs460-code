@@ -1,5 +1,5 @@
 CC      =  gcc
-CFLAGS  = -Wall -pedantic -std=c11 -ggdb #-save-temps
+CFLAGS  = -pedantic -std=c11 -ggdb #-save-temps
 LDFLAGS =
 SRCS    = $(wildcard *.c)
 OBJS    = $(SRCS:.c=.o)
@@ -14,7 +14,10 @@ $(TARGET): $(OBJS)
 %.o: %.c $(DEPS)
 	$(CC) $(CFLAGS) -c -o $@ $<
 
+run: 
+	./$(TARGET) ./photos/*.jpg
+
 .PHONY: clean
 clean:
 	rm -rf $(OBJS) $(TARGET) *~
-
+	rm -rf *.jpg
