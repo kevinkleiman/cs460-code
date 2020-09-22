@@ -1,0 +1,9 @@
+
+/pa1_release
+.DS_Store
+*.o
+*.i
+*~
+*.jpg
+*.png
+.vagrant
