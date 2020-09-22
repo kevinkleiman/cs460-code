@@ -21,3 +21,4 @@ run:
 clean:
 	rm -rf $(OBJS) $(TARGET) *~
 	rm -rf *.jpg
+	rm -rf *.html
