@@ -84,7 +84,6 @@ void write_html(char * captions[], int img_count) {
     fprintf(fp, "<ul>\n");
 	// Dynamically write caption and photo display
     for(int i = 1; i < img_count; i++) {
-		printf("Caption: %s\n", captions[i]);
 		sprintf(thumbnail_buffer, "thumbnail%d.jpg", i);
 		sprintf(medium_buffer, "medium_photo%d.jpg", i);
         fprintf(fp, "\t<li>\n\t\t<h3>%s</h3>\n\t\t<a href=\"%s\"><img src=\"%s\"></a>\n\t</li>\n", "caption holder", medium_buffer, thumbnail_buffer);
